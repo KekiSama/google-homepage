@@ -12,7 +12,6 @@ header{}
 
 html, body{
   font-family: Arial, sans-serif;
-  word-spacing
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,7 +36,7 @@ text-decoration: underline;
 
 li{
   float: left;
-}
+  }
 
 li a{
   display: block;
@@ -46,8 +45,8 @@ li a{
 
 section{ 
   display: block;
-  height: 97vh;
-  width: 97vw;
+  height: 100%;
+  width: 100%;
 
 }
 .container{
@@ -98,9 +97,7 @@ section .buttons{
     user-select: none;
 
 }
-section .buttons:hover{
-
-}  
+  
 
 #box-container{
   display:flex;
@@ -109,23 +106,21 @@ section .buttons:hover{
   padding: 20px;
   margin-bottom: 0px;
   background-color:#f2f2f2;
-  justify-content: space-between;
-  word-spacing: 18px;
 }
 
 .bot-nav{
   list-style-type: none;
-  background-color: grey;
+  overflow: hidden;
+  background-color: #dddddd;
   margin: 0;
   padding: 0;
   font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
   </style>
-
-
-
-
 <header>
   <ul class="navbar">
     <li><a href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a></li>
@@ -134,11 +129,8 @@ section .buttons:hover{
     <li style="float:right"><a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Images</a></li>
   </ul>
 </header>
-
 <body>  
-
 <section>
-
   <div class="container">
     <img class="google-logo"
     src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
@@ -151,11 +143,7 @@ section .buttons:hover{
       <button class="buttons">I'm Feeling Lucky </button>
     </div>
   </div>
-
-
 </section>
-
-
 <footer>
   <ul class="bot-nav">
     <li><a  href="https://www.google.com/intl/en_au/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
@@ -166,7 +154,5 @@ section .buttons:hover{
     <li style="float:right"><a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Settings</a></li> 
   </ul>
 </footer>
-
-
 </body>
 </html>
