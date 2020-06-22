@@ -7,11 +7,17 @@
 </head>
 
 <style>
-body{
-  display: block;
 
+header{}
+
+html, body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
 }
-    
+
 a:link, a:visited{
   color: black;
   text-decoration: none;
@@ -20,65 +26,120 @@ a:link, a:visited{
   a:hover {
 text-decoration: underline; 
   }
-  
+
+.navbar{
+  border: 0px solid grey;
+}
 .right-nav{
-  position: relative;
-  right: -90%;
+  position: absolute;
+  right: 0px;
 }
 
-  .google-logo{
-    display: block;
-    margin: auto;
-  }
+section{ 
+  display: block;
+  height: 100vh;
+  width: 100vw;
 
- } 
-  .search-bar{
-    width: 400px;
-    margin: 5px;
-  }
+}
+.container{
+  display:flex;
+  flex-direction: column;
+  max-width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.search-bar{
+  width: 600px;
+  height: 40px;
+  border-radius: 40px;
+
+}
+
+section .buttons{
+  background-color:#f2f2f2;
+  color: #5F63688;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
 
 
-  footer{
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
+}
+section .buttons:hover{
+
+}  
+
+.bottom-footer{
+  margin-top: auto;
     padding: 20px;
-    background-color: grey;
-  }
+    background-color:#f2f2f2;
+}
+
+.bot-right-nav{
+  position: absolute;
+  right: 0px;
+}
+
   </style>
 
 
 
 
 <header>
-<nav> 
-  <a href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a>
-  <a href="https://store.google.com/AU?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-AU">Store</a>
-  <a class="right-nav" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
-  <a class="right-nav" href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Images</a>
-</nav>
+  <div class="navbar">
+    <a href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a>
+    <a href="https://store.google.com/AU?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-AU">Store</a>
+      <div class="right-nav">
+        <a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+        <a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Images</a>
+      </div>
+  </div>
 </header>
 
 <body>  
-  <img class="google-logo"
-src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
-alt="Google logo">
-<div>
-<input class=search-bar type="text">
-</div>
-<div>
- <button class=google-search-button>Google Search </button>
- <button class=feeling-lucky-button>I'm Feeling Lucky </button>
-</div>
-</body>
-<div>
+
+<section>
+
+  <div class="container">
+    <img class="google-logo"
+    src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+    alt="Google logo">
+    <div>
+      <input class=search-bar type="text">
+    </div>
+    <div>
+      <button class="buttons">Google Search </button>
+      <button class="buttons">I'm Feeling Lucky </button>
+    </div>
+  </div>
+
+
+</section>
+
+
 <footer>
-  <a  href="https://www.google.com/intl/en_au/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
-  <a  href=https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
-  <a  href="https://mail.google.com/mail/?tab=wm&ogbl">How Search works</a>
-  <a  href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Privacy</a>
-  <a  href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Terms</a>
-  <a  href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Settings</a>
+  <div class="bottom-footer">
+    <a  href="https://www.google.com/intl/en_au/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+    <a  href=https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+    <a  href="https://mail.google.com/mail/?tab=wm&ogbl">How Search works</a>
+    <div class="bot-right-nav"
+      <a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Privacy</a>
+      <a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Terms</a>
+      <a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Settings</a>
+    </div>  
+  </div>
 </footer>
-</div>
+
+
+</body>
 </html>
