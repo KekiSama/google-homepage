@@ -29,16 +29,20 @@ text-decoration: underline;
   }
 
 .navbar{
-  display:flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   font-size: 13px;
-  height: 10px;
-  padding: 14px;
-  margin-top: 0px;
-  justify-content: space-between;
 }
-.right-nav{
-padding-right: 100px;  
+
+li{
+  float: left;
 }
+
+li a{
+  display: block;
+  padding: 8px;
+  }
 
 section{ 
   display: block;
@@ -46,7 +50,7 @@ section{
   width: 97vw;
 
 }
-#container{
+.container{
   display:flex;
   flex-direction: column;
   max-width: 100vw;
@@ -69,7 +73,13 @@ section{
   height: 30px;
   border-radius: 40px;
   margin: 20px;
+  font-size: 16px;
+  text-indent: 20px;
+}
 
+.search-bar:focus{
+  
+  outline: none;
 }
 
 section .buttons{
@@ -100,11 +110,15 @@ section .buttons:hover{
   margin-bottom: 0px;
   background-color:#f2f2f2;
   justify-content: space-between;
+  word-spacing: 18px;
 }
-#box-1 #box-2{
-  width: 25%;
-  height: 100%;
 
+.bot-nav{
+  list-style-type: none;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
 }
 
   </style>
@@ -113,23 +127,19 @@ section .buttons:hover{
 
 
 <header>
-  <div class="navbar">
-    <div>
-      <a href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a>
-      <a href="https://store.google.com/AU?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-AU">Store</a>
-    </div>  
-    <div class="right-nav">
-      <a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
-      <a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Images</a>
-      </div>
-  </div>
+  <ul class="navbar">
+    <li><a href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+    <li><a href="https://store.google.com/AU?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-AU">Store</a></li>   
+    <li style="float:right"><a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>
+    <li style="float:right"><a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+  </ul>
 </header>
 
 <body>  
 
 <section>
 
-  <div id="container">
+  <div class="container">
     <img class="google-logo"
     src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
     alt="Google logo">
@@ -147,18 +157,14 @@ section .buttons:hover{
 
 
 <footer>
-  <div id="box-container">
-    <div id="box-1">
-    <a  href="https://www.google.com/intl/en_au/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
-    <a  href=https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
-    <a  href="https://mail.google.com/mail/?tab=wm&ogbl">How Search works</a>
-    </div>
-    <div id="box-2">
-      <a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Privacy</a>
-      <a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Terms</a>
-      <a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Settings</a>
-    </div>  
-  </div>
+  <ul class="bot-nav">
+    <li><a  href="https://www.google.com/intl/en_au/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+    <li><a  href=https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+    <li><a  href="https://mail.google.com/mail/?tab=wm&ogbl">How Search works</a></li>
+    <li style="float:right"><a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Privacy</a></li>
+    <li style="float:right"><a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Terms</a></li>
+    <li style="float:right"><a href="https://www.google.com.au/imghp?hl=en&tab=wi&ogbl">Settings</a></li> 
+  </ul>
 </footer>
 
 
